@@ -28,10 +28,13 @@ export default function Navbar() {
         className="absolute inset-0 origin-top bg-mist/95 backdrop-blur-md shadow-sm"
       />
       <nav aria-label="Primary" className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <a href="#top" aria-label={`${site.name}, back to top`}>
-          <motion.span animate={{ scale: shrink ? 0.9 : 1 }} transition={transition} className="inline-flex origin-left items-baseline gap-3">
-            <span className="font-display text-3xl font-bold text-forest">TIS</span>
-            <span className="hidden text-sm text-muted sm:inline">{site.name}</span>
+        <a href="#top" aria-label={`${site.name}, back to top`} className="group">
+          <motion.span animate={{ scale: shrink ? 0.9 : 1 }} transition={transition} className="inline-flex origin-left items-center gap-3">
+            <img src="/images/school-logo.png" alt="TIS Logo" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+            <div className="flex flex-col">
+              <span className="font-display text-xl font-bold tracking-tight text-forest">Tulas International</span>
+              <span className="hidden text-xs text-muted sm:inline font-medium">Dehradun • Est. 2012</span>
+            </div>
           </motion.span>
         </a>
 

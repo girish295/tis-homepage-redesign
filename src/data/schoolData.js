@@ -27,9 +27,15 @@ export const navLinks = [
 ]
 
 export const hero = {
-  lines: ['Welcome to', 'Tulas', 'International', 'School (TIS)'],
-  text: 'TIS is one of India’s top boarding and day schools in Dehradun, India.',
-  image: { src: `${TIS}/images/tis-campus-og.jpg`, alt: 'Tulas International School campus in Dehradun India' },
+  kicker: '✨ Ranked #1 Co-Ed Boarding School in Dehradun',
+  lines: ['Welcome to', 'Tulas International School'],
+  text: 'A premier CBSE-affiliated boarding and day school in Dehradun, Uttarakhand. Nurturing future leaders on a 22-acre pollution-free campus with modern academics and 16+ Olympic sports.',
+  image: { src: '/images/hero-campus.webp', alt: 'Tulas International School lush green 22-acre campus in Dehradun' },
+  highlights: [
+    { value: '22 Acres', label: 'Lush Green Campus' },
+    { value: '#1 Ranked', label: 'Co-Ed Boarding School' },
+    { value: '16+ Sports', label: 'Olympic Facilities' },
+  ],
 }
 
 export const about = {
@@ -69,20 +75,80 @@ export const campus = {
     'Billiards', 'Squash', 'Volleyball', 'Basketball', 'Cricket', 'Lawn Tennis', 'Badminton', 'Table Tennis',
   ],
   images: [
-    { src: media('swimming.6fc81e65.webp'), alt: 'Students swimming at TIS' },
-    { src: media('polo.973ddbae.webp'), alt: 'Students playing polo at TIS' },
+    { src: '/images/gallery-swimming.jpg', alt: 'Olympic Swimming Arena at TIS' },
+    { src: '/images/gallery-horse-riding.jpg', alt: 'Horse Riding & Equestrian Academy at TIS' },
   ],
 }
 
 export const gallery = {
-  title: 'Let’s do it with Tulas',
+  title: 'Life & Activities at Tulas',
+  subtitle: 'Explore our vibrant campus life, sports training, arts, and world-class infrastructure.',
+  categories: ['All', 'Sports', 'Arts & Culture', 'Campus'],
   items: [
-    { src: media('karate.4020fba5.webp'), alt: 'Students practising karate at TIS', className: 'col-span-2 md:col-span-4 aspect-video' },
-    { src: media('dance.88843edb.webp'), alt: 'Students performing a dance at TIS', className: 'md:col-span-2 aspect-portrait' },
-    { src: media('Image%202.0c5295c9.webp'), alt: 'Student life at Tulas International School', className: 'md:col-span-2 aspect-square' },
-    { src: media('pot.6f7c2ee3.webp'), alt: 'Pottery activity at TIS', className: 'col-span-2 md:col-span-4 aspect-video' },
-    { src: media('Image%203.21dc9e69.webp'), alt: 'Student life at Tulas International School', className: 'md:col-span-3 aspect-portrait' },
-    { src: media('Image%201.0a814859.webp'), alt: 'Student life at Tulas International School', className: 'md:col-span-3 aspect-square' },
+    {
+      id: 'swimming',
+      src: '/images/gallery-swimming.jpg',
+      alt: 'Students training in Olympic competition swimming pool at TIS',
+      title: 'Olympic Swimming Arena',
+      category: 'Sports',
+      desc: 'All-weather, Olympic-standard swimming complex with certified coaches and aquatic training.',
+    },
+    {
+      id: 'sports-ground',
+      src: '/images/gallery-sports-ground.jpg',
+      alt: 'Lush 22-acre sports grounds and running track at TIS Dehradun',
+      title: '22-Acre Sports Grounds',
+      category: 'Sports',
+      desc: 'Expansive outdoor grounds supporting cricket, football, lawn tennis, athletics, and track events.',
+    },
+    {
+      id: 'horse-riding',
+      src: '/images/gallery-horse-riding.jpg',
+      alt: 'Students in equestrian attire horseback riding at TIS Dehradun',
+      title: 'Equestrian & Horse Riding',
+      category: 'Sports',
+      desc: 'Dedicated equestrian arena nurturing discipline, balance, and championship horse-riding skills.',
+    },
+    {
+      id: 'karate',
+      src: '/images/gallery-karate.jpg',
+      alt: 'Students practising karate martial arts in modern dojo at TIS',
+      title: 'Martial Arts & Taekwondo',
+      category: 'Sports',
+      desc: 'Self-defense, physical fitness, and mental focus through professional martial arts training.',
+    },
+    {
+      id: 'dance',
+      src: '/images/gallery-dance.jpg',
+      alt: 'Students performing classical and cultural dance on auditorium stage',
+      title: 'Performing Arts & Dance',
+      category: 'Arts & Culture',
+      desc: 'Classical Bharatanatyam, Kathak, and contemporary dance programs encouraging creative expression.',
+    },
+    {
+      id: 'pottery',
+      src: '/images/gallery-pottery.jpg',
+      alt: 'Students shaping clay in pottery and sculpture studio at TIS',
+      title: 'Pottery & Creative Crafts',
+      category: 'Arts & Culture',
+      desc: 'Hands-on pottery and visual arts studios inspiring tactile innovation and creative expression.',
+    },
+    {
+      id: 'science-lab',
+      src: '/images/gallery-science-lab.jpg',
+      alt: 'Students conducting experiments in modern physics and chemistry lab',
+      title: 'Modern Science & Innovation Labs',
+      category: 'Campus',
+      desc: 'State-of-the-art laboratory infrastructure fostering inquiry-based scientific exploration.',
+    },
+    {
+      id: 'auditorium',
+      src: '/images/gallery-auditorium.jpg',
+      alt: 'Grand auditorium and tiered amphitheatre at TIS',
+      title: 'Auditorium & Amphitheatre',
+      category: 'Campus',
+      desc: 'Grand tiered auditorium hosting international debates, drama, and musical performances.',
+    },
   ],
 }
 
